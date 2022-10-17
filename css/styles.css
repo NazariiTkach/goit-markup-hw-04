@@ -16,6 +16,7 @@
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
   --background-portfolio: #eeeeee;
+  --icon-color: rgba(175, 177, 184, 1)
 }
 
 .visually-hidden {
@@ -222,23 +223,20 @@ body {
   padding-top: 94px;
 }
 
-.features-box-list {
+.features-box {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
-}
-
-.features-box-icon {
-}
-
-.features-box-iteam {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  width: 270px;
-  height: 120px;
-  background-color: var(--third-background-color);
+  align-items: center;
+  margin-bottom: 30px;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--third-background-color);
+}
+
+
+ .features-box-icon {
 }
 
 .features-list {
@@ -344,7 +342,7 @@ body {
   width: 44px;
   height: 44px;
   background-color: var(--white-color);
-  fill: var(--text-color);
+  fill: var(--icon-color);
 }
 
 .social-link:hover,
@@ -385,7 +383,7 @@ body {
   width: 170px;
   height: 92px;
   background-color: var(--white-color);
-  fill: var(--text-color);
+  fill: var(--icon-color);
 }
 
 .client-link:hover,
@@ -453,7 +451,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .social-list-footer {
@@ -576,14 +574,15 @@ body {
 }
 
 .projects-link {
+  display: block;
   text-decoration: none;
 }
 
-.iteam:hover,
-.iteam:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-   0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-content {
